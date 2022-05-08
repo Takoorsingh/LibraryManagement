@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management system</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="LB.css" />
+    <style>
+        input[type=submit]:hover {
+          background-color:rgb(243, 7, 7);
+  }
+      </style>
+</head>
+<body>
+    
+
+    <div class="topnav">
+        <header>
+            <nav>
+                <ul class="tabs">
+                    <li class="tab is-active">
+                        <a data-switcher data-tab="1"><i class="fa fa-fw fa-home"></i>HOME</a>
+                    </li>
+                    <li class="tab">
+                        <a data-switcher data-tab="2"><i class="fa fa-fw fa-book"></i>BOOKS</a>
+                    </li>
+                    <li class="tab">
+                        <a data-switcher data-tab="3" href="abt.html"><i class="fa fa-fw fa-tv"></i>ABOUT</a>
+                    </li>
+                    <li class="tab">
+                        <a data-switcher data-tab="4"><i class="fa fa-fw fa-user"></i>LOGIN</a>
+                    </li>   
+                </ul>
+                <div class="topnav-right">
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                          <input type="text" placeholder="Search.." name="search">
+                          <button type="submit"><i class="fa fa-fw fa-search"></i> </button>
+                        </form>
+                        </div>
+                    </div> 
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        <section class="pages">
+            <div class="page is-active" data-page="1">
+                <div class="overlay">
+                    <h1>LIBRARY MANAGEMENT SYSTEM</h1>
+                    <h1>LIBRARY MANAGEMENT SYSTEM</h1>
+                  </div>
+                  <div>
+                      <p class="about" align="center"> 
+                        Whether reading is your passion or you read occasionally on a rainy day with a mug of coffee in your hand, 
+                        you can take your pick from the wide range of books available at Snapdeal. 
+                        Books also make the best gift for everyone, be it for children or the elderly. 
+                        Starting from the books that become the foundation of the being of children to autobiographies of great personalities that can inspire you to grow in your life,
+                        you can buy books online from all genres and satisfy the cravings of bibliophiles.
+                      </p>
+                      <p class="about1" align="center">
+                        Books to Increase Knowledge:<br>
+                        You can buy books online on a variety of subjects like history and politics, 
+                        science and technology, computer and medicine,
+                        literature, sports, travel and wildlife, music and cooking, etc. 
+                        Such books will help you to enrich yourself with ideas and knowledge on a particular segment and help you to put those ideas to work.
+                        If you are planning to set out to travel,
+                        you can gather knowledge about the nature and wildlife of a particular area that you want to visit.
+                      </p>
+                  </div>
+        
+            </div>
+            <div class="page" data-page="2">
+                <h2>Page 2</h2>
+                <p>Welcome to the about page</p>
+            </div>
+            <div class="page" data-page="3">
+                
+            </div>
+            <div class="page" data-page="4">
+                <div class="form-box">
+                    <form class="box"> 
+                        <h1>LogIn<i class="fa fa-fw fa-user"></i></h1>
+                        <input type="text" name="" placeholder="Username" class="text-input">
+                        <input type="password" name="" placeholder="Password" class="text-input">
+                        <input id="terms" type="checkbox">
+                        <label for="terms"></label>
+                        <span>Agree with <a href="#">Terms & Conditions</a></span>
+                        <input type="submit" name="" value="Login">
+                      </form>
+            </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="LB.js"></script>
+</body>
+</html>

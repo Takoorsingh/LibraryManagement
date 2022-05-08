@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #EEE;
+    background: url("img/home2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
+	font-family: poppins;
+	font-size: 16px;
+	color: #fff;
+}
+
+header {
+    background-color: #333;
+    overflow: hidden;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 7px 11px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 19px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+header nav .tabs {
+    list-style-type: none;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .tabs .tab {
+    display: block;
+}
+
+header nav .tabs .tab a[data-switcher] {
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #FFF;
+    background: color #333;
+    cursor: pointer;
+}
+
+header nav .tabs .tab:hover a[data-switcher] {
+    background-color: gray;
+}
+
+header nav .tabs .tab.is-active a[data-switcher] {
+    background-color: #d244f2;
+    font-weight: 700;
+}
+
+     /*search container*/
+     .topnav-right {
+        float: right;
+      }
+     .topnav .search-container {
+        float: right;
+      }
+      
+      .topnav input[type=text] {
+        padding: 6px;
+        margin-top: 10px;
+        font-size: 17px;
+        border: none;
+      }
+      
+      .topnav .search-container button {
+        float: right;
+        padding: 6px;
+        margin-top: 10px;
+        margin-right: 18px;
+        background: #ddd;
+        font-size: 17px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .topnav .search-container button:hover {
+        background: rgb(177, 177, 177);
+      }
+      
+      @media screen and (max-width: 600px) {
+        .topnav .search-container {
+          float: right;
+        }
+        .topnav a, .topnav input[type=text], .topnav .search-container button {
+          float: right;
+          display: block;
+          text-align: left;
+          width: 100%;
+          margin: 0;
+          padding: 14px;
+        }
+        .topnav input[type=text] {
+          border: 1px solid #ccc;  
+        }
+      }
+
+
+/*HOME*/
+      .overlay h1 {
+        background-color: #fff;
+        color: #000;
+        mix-blend-mode: screen;
+        position:absolute;
+        top: 75%;
+        bottom:auto;
+        left: 70%;
+        transform: translate(-220%, -90%);
+        padding: 30px;
+        border-radius: 25px;
+        font-family: "Malgun Gothic Semilight";
+        font-size: 3.2em;
+        margin: 0;
+        opacity: 0.8;
+      }
+      .overlay h1:last-child {
+        mix-blend-mode: normal;
+        color: transparent;
+        background: none;
+        box-shadow: 0 0 16px #000, 0 0 32px #000;
+      }
+/*home about*/
+.about {
+	background-color: white(0, 0, 0, 0.5);
+  font-family: "papyrus";
+	margin: 100px;;
+	padding: 30px;
+	border-radius: 30px;
+	box-shadow: 0 0 10px rgb(139, 151, 235)   ;
+	position: absolute;
+	top:10px;
+	bottom: 30;
+	left: 880px;
+	right: 0px;
+  opacity: 7;
+	width: 500px;
+	height: 270px;
+}
+.about1 {
+	background-color: white(0, 0, 0, 0.5);
+  font-family: "papyrus";
+	margin: 100px;;
+	padding: 30px;
+	border-radius: 30px;
+	box-shadow: 0 0 10px rgb(221, 131, 237)   ;
+	position: absolute;
+	top: 290px;
+	bottom: 0px;
+	left: 880px;;
+	right:0px;
+  opacity:1;
+	width: 500px;
+	height: 270px;;
+}
+.about:hover{
+  opacity: 1.0;
+  color: black;
+  background-color: white;
+}
+.about1:hover{
+  opacity: 1.0;
+  color: black;
+  background-color: white;
+}
+      
+  /* login *
+  * {
+	box-sizing: border-box;
+}
+body {
+	font-family: poppins;
+	font-size: 16px;
+	color: #fff;
+}
+.form-box {
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: auto auto;
+	padding: 40px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgb(123, 120, 129)   ;
+	position: absolute;
+	top: 10;
+	bottom: 5;
+	left: 0;
+	right: 0;
+  opacity: 0.5;
+	width: 500px;
+	height: 430px;
+}
+.form-box:hover{
+    opacity: 1.0;
+}
+
+.form-box .header-text {
+	font-size: 32px;
+	font-weight: 600;
+	padding-bottom: 30px;
+	text-align: center;
+}
+.form-box input {
+	margin: 10px 0px;
+	border: none;
+	padding: 10px;
+	border-radius: 5px;
+	width: 100%;
+	font-size: 18px;
+	font-family: poppins;
+}
+.form-box input[type=checkbox] {
+	display: none;
+}
+.form-box label {
+	position: relative;
+	margin-left: 5px;
+	margin-right: 10px;
+	top: 5px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+.form-box label:before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background-color: #ddd;
+}
+.form-box input[type=checkbox]:checked+label:before {
+	content: "\2713";
+	font-size: 20px;
+	color: #000;
+	text-align: center;
+	line-height: 20px;
+}
+.form-box span {
+	font-size: 14px;
+}
+.form-box input[type=submit] {
+	background-color: deepskyblue;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+	padding: 10px;
+	margin: 20px 0px;
+}
+/login */
+.box {
+  width: 340px;
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius:30px;
+  transform: translate(-50%,-50%);
+  background: #191919;
+  text-align: center;
+  box-shadow: 0 0 10px rgb(203, 142, 230);
+  opacity: 0.7;
+   
+}
+.box h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box:hover{
+  opacity: 1.0;
+}
+ 
+.text-input {
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 25px;
+  transition: 0.25s;
+}
+ 
+ 
+.text-input:focus {
+  width: 250px;
+  border-color: #2ecc71;
+}
+ 
+.box input[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 25px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+ 
+.box input[type="submit"]:hover {
+  background: #2ecc71;
+}
+.box input[type=checkbox]:checked+label:before {
+	content: "\2713";
+	font-size: 20px;
+	color: #000;
+	text-align: center;
+	line-height: 20px;
+}
+.box span {
+	font-size: 14px;
+}
+
+
+.pages {
+    align-items: center;
+    margin-top: 100px;
+    padding: 50px 30px;
+    border-radius: 8px;
+
+}
+
+.pages .page {
+    display: none;
+}
+
+.pages .page.is-active {
+    display: block;
+}
